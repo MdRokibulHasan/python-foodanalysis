@@ -1,0 +1,48 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block content %}
+
+        <!--//=======Main Slider=======//--> 	 			
+        <div class="wa_main_bn_wrap">
+            <div id="home1-main-slider" class="owl-carousel owl-theme">
+                <div class="item">
+                    <figure>
+                        <img src="{% static 'img/slider/1.jpg' %}" class="hidden-xs hidden-sm " alt=""/>
+                        <img src="{% static 'img/slider/1xs.jpg' %}" class="hidden-lg hidden-md" alt=""/>
+                        <figcaption>
+                            <span>vero volo in esse quam maximam</span>
+                            <h2><span class="wa-theme-color">Restaurant & Cafe template</span></h2>
+                            <p>Quis est tam dissimile homini. Quia dolori non voluptas.</p>
+                            <a href="#" class="theme-button">read more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="{% static 'img/slider/2.jpg' %}" class="hidden-xs hidden-sm " alt=""/>
+                        <img src="{% static 'img/slider/2xs.jpg' %}" class="hidden-lg hidden-md" alt=""/>
+                        <figcaption>
+                            <span>vero volo in esse quam maximam</span>
+                            <h2><span class="wa-theme-color">Restaurant & Cafe template</span></h2>
+                            <p>Quis est tam dissimile homini. Quia dolori non voluptas.</p>
+                            <a href="#" class="theme-button">read more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="{% static 'img/slider/3.jpg' %}" class="hidden-xs hidden-sm" alt=""/>
+                        <img src="{% static 'img/slider/3xs.jpg' %}" class="hidden-lg hidden-md" alt=""/>
+                        <figcaption>
+                            <span>vero volo in esse quam maximam</span>
+                            <h2><span class="wa-theme-color">Restaurant & Cafe template</span></h2>
+                            <p>Quis est tam dissimile homini. Quia dolori non voluptas.</p>
+                            <a href="#" class="theme-button">read more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <!--//=======Main Slider End=======//--> 
+							
+{% endblock content %}
