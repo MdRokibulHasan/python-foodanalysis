@@ -1,7 +1,7 @@
 /* Ends No Need Style */
 /* Custom Navigation */
 .navbar-nav{
-	float: right;
+	float: right!important;
 }
 
 .navbar-nav > li {
@@ -284,7 +284,7 @@ li.mega-menu{
 }
 /* Logo in Form */
 .login-form a{
-	#color: #222;
+	color: #222;
 }
 .login-form a i{
 	padding-left: 3px;
@@ -1201,7 +1201,7 @@ header .navbar-collapse{
 		padding-left: 10px;
 	}
 	.navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu > li > a{
-		#padding: 5px;
+		padding: 5px;
 	}
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
 		padding-left: 16px;

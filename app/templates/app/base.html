@@ -71,7 +71,7 @@
                                         <span class="icon-bar"></span> 
                                         <span class="icon-bar"></span></button> 
                                         <!-- Logo -->
-                                        <a class="navbar-brand" href="index.html">
+                                        <a class="navbar-brand" href="{% url 'index' %}">
                                         <img class="site_logo" alt="Site Logo"  src="{% static 'img/logo.png' %}" />
                                         </a>
                                     </div>
@@ -79,45 +79,10 @@
                                     <div class="navbar-collapse collapse">
                                         <!-- Right nav Start -->
                                         <ul class="nav navbar-nav">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li>
-                                                <a href="#">Pages</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="about.html">About Us</a></li>
-                                                    <li><a href="services.html">Services</a></li>
-                                                    <li><a href="team-detail.html">Team Detail</a></li>
-                                                    <li><a href="404.html">404 Error page</a></li>
-                                                    <li><a href="default-page.html">Default Page</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#">blog</a> 
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="blog-style1.html">Blogs Style 1</a></li>
-                                                    <li><a href="blog-style2.html">Blogs Style 2</a></li>
-                                                    <li><a href="blog-style3.html">Blogs Style 3</a></li>
-                                                    <li>
-                                                        <a href="#">Blog Detail</a>										  
-                                                        <ul class="dropdown-menu">
-                                                            <li><a href="blog-single-sidebar.html">With Sidebar</a></li>
-                                                            <li><a href="blog-single-full-width.html">Without Sidebar</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#">Dishes</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="dishes-sidebar.html">Dishes Style 1</a></li>
-                                                    <li><a href="dishes-fullwidth.html">Dishes Style 2</a></li>
-                                                    <li><a href="dishes-detail.html">dish detail</a></li>
-                                                    <li><a href="cart.html">Cart Page</a></li>
-                                                    <li><a href="checkout.html">Checkout Page</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="FAQ.html">faq</a></li>
-                                            <li><a href="login-area.html">login area</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="{% url 'index' %}">Home</a></li>
+                                            <li><a href="{% url 'about' %}">About</a></li>
+                                            <li><a href="{% url 'signin' %}">Signin</a></li>
+                                            <li><a href="{% url 'index' %}">Signup</a></li>
                                         </ul>
                                         <!-- /.Right nav  End-->
                                     </div>
@@ -136,6 +101,19 @@
 
 
     {% block content %}{% endblock %}
+
+    <footer id="main-footer" class="dark-footer footer-style1">
+                <!--Copyright Footer Block-->
+                <div class="bottom-footer">
+                    <div class="container">
+                        <div class="row pad-s15">
+                            <div class="col-md-12 copy-right text-center">
+                                <p>Copyright &copy; 2020 Restora, All Rights Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </footer>
 
 
 <script src="{% static 'js/jquery.min.js' %}"></script>

@@ -1,7 +1,110 @@
-{% extends "app/base.html" %}
-{% load static %}
-{% block content %}
+{% extends "app/base.html" %} {% load static %} {% block content %}
 
-<h1>This is index</h1>
-							
+<!--//==Page Header Start==//-->
+<div class="page-header black-overlay">
+  <div class="container breadcrumb-section">
+    <div class="row pad-s15">
+      <div class="col-md-12">
+        <h2>Chef Detail</h2>
+        <div class="clear"></div>
+        <div class="breadcrumb-box">
+          <ul class="breadcrumb">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li class="active">Chef Detail</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--//==Page Header End==//-->
+<!--//=========Member Detail Start=========//-->
+<section class="page_single padTB100">
+  <div class="container">
+    <div class="row pad-s15">
+      <!--//==Section Thumbnail Start==//-->
+      <div class="col-md-6 col-md-offset-0 col-sm-6 marB30">
+        <img src="{% static 'img/team/team-detail.jpg' %}" alt="" />
+      </div>
+      <!--//==Section Content Start==//-->
+      <div class="col-md-6 col-md-offset-0 col-sm-6 marB30">
+        <div class="wa-heading-style1 block-detail-head padB20">
+          <h4>john Doe distri</h4>
+        </div>
+        <div class="clear"></div>
+        <ul class="social text-left marB20">
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-google"></i></a>
+          </li>
+        </ul>
+        <p class="hidden-xs hidden-sm">
+          Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using content here. Quisque eget felis non ex
+          consectetur iaculis in at dolor velit turpis.
+        </p>
+        <p class="hidden-lg hidden-md">
+          Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed.
+        </p>
+        <blockquote class="theme-quote">
+          Donec id auctor odio. Morbi eget magna aliquam velit accumsan
+          ultrices. Quisque et egestas elit. Mauris et finibus velit. Quisque in
+          pharetra lorem. Quisque eget felis non ex consectetur iaculis in at
+          dolor. Vivamus velit turpis, euismod quis sollicitudin nec
+        </blockquote>
+        <div class="clear"></div>
+        <div class="row hidden-xs hidden-sm">
+          <div class="col-md-12">
+            <h4 class="title padT10 padB20">john's info</h4>
+            <p><strong>Sex</strong> : Male</p>
+            <p><strong>Position</strong> : Head Chef</p>
+            <p><strong>Date of Birth </strong> : 05-Nov-1984</p>
+          </div>
+          <div class="col-md-12">
+            <p><strong>Experience</strong> : 7 Years</p>
+            <p><strong>Dishes Known</strong> : Chinese, Indian, french</p>
+            <p>
+              <strong>Specialiest In</strong> : Chinese, french, italian, cake,
+              muffins
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="col-md-12">
+        <div class="row hidden-lg hidden-md">
+          <div class="col-md-12">
+            <h4 class="title padT10 padB20">john's info</h4>
+          </div>
+          <div class="col-md-12 col-sm-4">
+            <p><strong>Sex</strong> : Male</p>
+            <p><strong>Position</strong> : Head Chef</p>
+            <p><strong>Date of Birth </strong> : 05-Nov-1984</p>
+          </div>
+          <div class="col-md-12 col-sm-8">
+            <p><strong>Experience</strong> : 7 Years</p>
+            <p><strong>Dishes Known</strong> : Chinese, Indian, french</p>
+            <p>
+              <strong>Specialiest In</strong> : Chinese, Indian, french,
+              italian, cake, muffins
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--//=========Member Detail End=========//-->
+
 {% endblock content %}

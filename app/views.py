@@ -10,7 +10,7 @@ def about(request):
     return render(request, "app/about.html", {})
 
 def blog_single(request):
-    return render(request, "app/blog-single.html", {})
+    return render(request, "app/blog_single.html", {})
 
 def signin(request):
     return render(request, "app/signin.html", {})
